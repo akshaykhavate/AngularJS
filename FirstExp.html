@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	</head>
+	
+	<body ng-app="myapp">
+		
+		<div ng-controller = "Hellocontroller">
+			<h1>Hello {{helloTo.title}} :) </h1>
+		</div>
+		
+		<script>
+			angular.module("myapp", [])
+			
+			.controller("Hellocontroller", function($scope) {
+					  $scope.helloTo = {};
+					  $scope.helloTo.title = "Akshay"
+			});
+		</script>	
+		
+	</body>
+</html>

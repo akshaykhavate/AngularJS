@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<title>Directives Demo</title>
+	<head>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="" ng-init="contries=[{'name':'India','capital':'Delhi'},{'name':'USA','capital':'NewYork'}]">
+		<p>Enter your name <input type="text" ng-model="name"></p>
+		<p>Hi <span ng-bind="name"></span> :) </p>
+		<ol>
+			<li ng-repeat="contry in contries">
+				{{'Country:'+contry.name+', Capital:'+contry.capital}}
+			</li>
+		</ol>
+		</div>
+	</body>
+</html>
